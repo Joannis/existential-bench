@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:bench}",
+            "name": "Debug bench",
+            "program": "${workspaceFolder:bench}/.build/debug/bench",
+            "preLaunchTask": "swift: Build Debug bench"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "cwd": "${workspaceFolder:bench}",
+            "name": "Release bench",
+            "program": "${workspaceFolder:bench}/.build/release/bench",
+            "preLaunchTask": "swift: Build Release bench"
+        }
+    ]
+}
