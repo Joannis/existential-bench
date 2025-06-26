@@ -51,3 +51,5 @@ some P Box value for a 48-byte struct access anchored loop   895854.000 ns ±   
 ```
 
 The thing to look out for is `time`. The milliseconds spent in test are irrelevant, since the iterations are different per test (thanks to the benchmarking library). As you see, `some` is about 2x faster in each scenario.
+
+In short, the whole file is effectively compiled into nothing. A black hole.
